@@ -14,6 +14,6 @@ auto format(std::string str, Arg arg, Args... args)
     {
         return str;
     }
-    format(str, args);
+    format(str, args...);
 }
 }; // namespace koko
