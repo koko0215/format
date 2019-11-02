@@ -9,6 +9,11 @@ template <typename Arg, typename... Args>
 auto format(std::string str, Arg arg, Args... args)
 {
     auto result = str.find("{}");
-    std::cout << result << std::endl;
+    str.insert(result, arg);
+    if (result == std::string::npos)
+    {
+        return str;
+    }
+    format(str, args);
 }
 }; // namespace koko
