@@ -3,13 +3,12 @@
 #include <algorithm>
 #include <vector>
 #include <iostream>
-class Koko
+namespace koko
 {
-public:
-    template <typename Arg, typename... Args>
-    auto format(std::string str, Arg arg, Args... args)
-    {
-        auto result = str.find("{}");
-        std::cout << result << std::endl;
-    }
-};
+template <typename Arg, typename... Args>
+auto format(std::string str, Arg arg, Args... args)
+{
+    auto result = str.find("{}");
+    std::cout << result << std::endl;
+}
+}; // namespace koko

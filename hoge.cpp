@@ -3,6 +3,6 @@
 #include <tuple>
 int main()
 {
-    Koko koko;
-    koko.format("ho{}ge", 10);
+
+    koko::format("ho{}ge", 10);
 }
