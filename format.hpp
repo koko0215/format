@@ -1,13 +1,15 @@
-#include<string>
-#include<tuple>
-#include<algorithm>
-#include<vector>
-class Koko{
-    public:
-        template <typename... Args>
-        auto format(Args... args)
-            -> std::tuple<Args...>
-            {
-                return {args...};
-            }
+#include <string>
+#include <tuple>
+#include <algorithm>
+#include <vector>
+#include <iostream>
+class Koko
+{
+public:
+    template <typename Arg, typename... Args>
+    auto format(std::string str, Arg arg, Args... args)
+    {
+        auto result = str.find("{}");
+        std::cout << result << std::endl;
+    }
 };
