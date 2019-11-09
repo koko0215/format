@@ -1,7 +1,4 @@
 #include <string>
-#include <tuple>
-#include <algorithm>
-#include <vector>
 #include <iostream>
 namespace koko
 {
