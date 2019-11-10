@@ -8,7 +8,7 @@ auto format(std::string str)
     return str;
 }
 template <typename Arg, typename... Args>
-auto format(std::string str, Arg arg = 0, Args... args)
+auto format(std::string str, Arg arg, Args... args)
 {
     auto result = str.find("{}");
     if (result == std::string::npos)
